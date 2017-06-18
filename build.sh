@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-ver=${VERSION:="0.2.0"}
+ver=${VERSION:="0.4.0"}
 exp_name=snmp_exporter
 
 NAME=$(basename $(dirname $PWD/Dockerfile))
