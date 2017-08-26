@@ -2,7 +2,7 @@
 
 REPO_DIR=$PWD
 BUILD_PATH='github.com/prometheus/snmp_exporter/generator'
-SNMP_EXPORTER_VERSION="v0.4.0"
+SNMP_EXPORTER_VERSION="v0.6.0"
 
 export GOPATH=$REPO_DIR/go
 mkdir -p $GOPATH

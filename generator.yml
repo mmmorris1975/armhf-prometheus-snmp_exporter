@@ -7,19 +7,21 @@ modules:
       - ifXTable
       - hrStorage
       - hrSystem
+      - hrDevice
       - laLoadInt
       - laNames
       - memory
       - ssCpuIdle
       - ssCpuSystem
       - ssCpuUser
-      - 1.3.6.1.2.1.25
       - 1.3.6.1.4.1.2021
     lookups:
       - old_index: ifIndex
         new_index: ifDescr
       - old_index: laIndex
         new_index: laNames
+      - old_index: hrStorageIndex
+        new_index: hrStorageDescr
 # If ifName is unique.
   default_ifname:
     walk:
@@ -28,13 +30,13 @@ modules:
       - ifXTable
       - hrStorage
       - hrSystem
+      - hrDevice
       - laLoadInt
       - laNames
       - memory
       - ssCpuIdle
       - ssCpuSystem
       - ssCpuUser
-      - 1.3.6.1.2.1.25
       - 1.3.6.1.4.1.2021
     lookups:
       - old_index: ifIndex
@@ -42,6 +44,8 @@ modules:
         new_index: 1.3.6.1.2.1.31.1.1.1.1 # ifName
       - old_index: laIndex
         new_index: laNames
+      - old_index: hrStorageIndex
+        new_index: hrStorageDescr
 # If only ifIndex is unique.
   default_ifindex:
     walk:
@@ -50,17 +54,19 @@ modules:
       - ifXTable
       - hrStorage
       - hrSystem
+      - hrDevice
       - laLoadInt
       - laNames
       - memory
       - ssCpuIdle
       - ssCpuSystem
       - ssCpuUser
-      - 1.3.6.1.2.1.25
       - 1.3.6.1.4.1.2021
     lookups:
       - old_index: laIndex
         new_index: laNames
+      - old_index: hrStorageIndex
+        new_index: hrStorageDescr
 
 # DD-WRT
 #

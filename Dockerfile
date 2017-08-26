@@ -6,4 +6,4 @@ COPY snmp.yml       /etc/snmp_exporter/config.yml
 
 EXPOSE      9116
 ENTRYPOINT  [ "/bin/snmp_exporter" ]
-CMD [ "-config.file=/etc/snmp_exporter/config.yml" ]
+CMD [ "--config.file=/etc/snmp_exporter/config.yml" ]
