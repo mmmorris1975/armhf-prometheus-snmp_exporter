@@ -1,4 +1,4 @@
-FROM armhf-prometheus-busybox:latest
+FROM arm32v7/busybox:1.27-uclibc
 MAINTAINER Mike Morris
 
 COPY snmp_exporter  /bin/snmp_exporter
